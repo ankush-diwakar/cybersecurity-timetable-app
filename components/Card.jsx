@@ -14,7 +14,10 @@ const Card = ({ lecture }) => {
 
   const lecList = lecture.lectures;
   return (
-    <>
+    <View style={{
+      margin: 15, backgroundColor: "#495057", borderRadius: 20, padding: 20, borderWidth: 1,
+      borderColor: '#6c757d',
+    }}>
 
       <View style={styles.con}>
         <Text style={styles.texth}>{lecture.day}</Text>
@@ -27,7 +30,7 @@ const Card = ({ lecture }) => {
 
       ))}
 
-    </>
+    </View>
 
   );
 };
@@ -42,6 +45,8 @@ const styles = StyleSheet.create({
     flex: 1,
     borderColor: '#fff', // White border
     border: 1,
+    borderWidth: 1,
+    borderColor: '#6c757d',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#343a40', // Black background

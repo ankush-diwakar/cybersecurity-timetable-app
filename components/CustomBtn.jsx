@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff', // White background color
         paddingVertical: 10,
         paddingHorizontal: 20,
-
         borderRadius: 20, // Rounded corners with radius of 20
         borderWidth: 1, // Optional: If you want a visible border
         borderColor: '#000', // Optional: Border color (black)

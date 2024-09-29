@@ -67,7 +67,7 @@ export const lec = [
         "subject": "Data Science & Analytics(TH)"
       }
     ]
-  }
+  },
 ]
 
 export const getToday = () => {
@@ -92,6 +92,7 @@ export const getFormattedDate = () => {
 export const pracs = [
   {
     subject: "Advanced Computer Networks",
+    link: "/acn",
     practicals: [
       { practicalNo: "1", practicalName: "Implement the concept of static routing" },
       { practicalNo: "2a", practicalName: "Implement the concept of RIPv1 and RIPv2 routing protocol" },
@@ -120,6 +121,7 @@ export const pracs = [
   },
   {
     subject: "Data Science & Analytics",
+    link: "/ds",
     practicals: [
       { practicalNo: "1a", practicalName: "Explore existing Packages, APIs, Data Sets and Models, Explore GitHub, Jupyter Notebook, RStudio, Google Colab, IBM Watson Studio" },
       { practicalNo: "1b", practicalName: "Data Science Methodology: Problem to Approach, Requirements to Collection, Understanding to Preparation, Modelling to Evaluation, Deployment to Feedback" },
@@ -143,5 +145,5 @@ export const pracs = [
       { practicalNo: "9b", practicalName: "Machine Learning for Data Science - Classification, Decision Trees, Random Forest" },
       { practicalNo: "10a", practicalName: "Machine Learning for Data Science - Clustering, Types, Optimal Number of Clusters" },
     ]
-  }
+  },
 ]
