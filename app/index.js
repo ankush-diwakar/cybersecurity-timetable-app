@@ -8,16 +8,16 @@ import SingleCard from '../components/SingleCard';
 import CustomBtn from '../components/CustomBtn';
 import { useRouter } from 'expo-router';
 import Zocial from '@expo/vector-icons/Zocial';
-import Entypo from '@expo/vector-icons/Entypo';
+
 
 const index = () => {
     const router = useRouter();
     const getLecturesByDay = (day) => {
-        const foundLectures = lec.filter(lectureDay => lectureDay.day === day);
+        const foundLectures = lec.filter((lm) => lm.day === day);
         if (foundLectures.length !== 0) {
-            return foundLectures.lectures;
+            return foundLectures[0].lectures;
         } else {
-            return foundLectures;
+            return [];
         }
     };
     const [todayDay, setTodayDay] = useState(getToday());
@@ -25,6 +25,7 @@ const index = () => {
     const [toggleLectures, setToggleLectures] = useState(true);
     const setLec = () => {
         const todaysDay = getToday();
+        console.log(todaysDay);
         setTodaysLectures(getLecturesByDay(todaysDay));
     }
 
@@ -96,7 +97,7 @@ const index = () => {
         </>
     );
 };
-
+//  <SingleCard lecture={todaysLectures} />
 const styles = StyleSheet.create({
     titleBig5: {
         marginTop: 20,
